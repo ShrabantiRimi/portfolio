@@ -1,1272 +1,428 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>DevFolio - Developer Portfolio Template</title>
-        <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <meta content="Free Website Template" name="keywords">
-        <meta content="Free Website Template" name="description">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shrabanti Saha Rimi | Automotive Software Test Engineer</title>
 
-        <!-- Favicon -->
-        <link href="img/favicon.ico" rel="icon">
+  <style>
+    :root {
+      --blue: #004b82;
+      --dark: #1f2933;
+      --gray: #5f6b7a;
+      --light: #f4f7fb;
+      --white: #ffffff;
+    }
 
-        <!-- Google Font -->
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
 
-        <!-- CSS Libraries -->
-        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-        <link href="lib/animate/animate.min.css" rel="stylesheet">
-        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    body {
+      background: var(--light);
+      color: var(--dark);
+      line-height: 1.6;
+    }
 
-        <!-- Template Stylesheet -->
-        <link href="css/style.css" rel="stylesheet">
-    </head>
+    header {
+      background: linear-gradient(135deg, #003b66, #0066a6);
+      color: white;
+      padding: 60px 10%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
 
-    <body data-spy="scroll" data-target=".navbar" data-offset="51">
-        <!-- Nav Bar Start -->
-        <div class="navbar navbar-expand-lg bg-light navbar-light">
-            <div class="container-fluid">
-                <a href="index.html" class="navbar-brand"></a>
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+    .hero-text {
+      max-width: 720px;
+    }
 
-                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                    <div class="navbar-nav ml-auto">
-                        <a href="#home" class="nav-item nav-link active">HOME</a>
-                        <a href="#about" class="nav-item nav-link">WORK & EXPERIENCE</a>
-                        <a href="#service" class="nav-item nav-link">KEY SKILLS</a>
-                        <a href="#experience" class="nav-item nav-link">PROJECTS</a>
-                        <a href="#portfolio" class="nav-item nav-link">Portfolio</a>
-                        <a href="#price" class="nav-item nav-link">SWOT</a>
-                        <a href="#review" class="nav-item nav-link">EDUCATION</a>
-                        <a href="#team" class="nav-item nav-link">ACHEIVEMENT</a>
-                        
-                       
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Nav Bar End -->
+    .hero-text h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
 
+    .hero-text h2 {
+      font-size: 22px;
+      font-weight: 500;
+      margin-bottom: 18px;
+    }
 
-        <!-- Hero Start -->
-        <div class="hero" id="home">
-            <div class="container-fluid">
-                <div class="row align-items-center">
-                    <div class="col-sm-12 col-md-6">
-                        <div class="hero-content">
-                            <div class="hero-text">
-                                <p>I'm</p>
-                                <h1>Shrabanti Rimi</h1>
-                                <h2></h2>
-                                <div class="typed-text">SOFTWARE QUALITY ASSURANCE, TEST ENGINEER</div>
-                            </div>
-                            
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-md-6 d-none d-md-block">
-                        <div class="hero-image">
-                            <img src="img/hero.png" alt="Hero Image">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Banner Start -->
-        <div class="banner wow zoomIn" data-wow-delay="0.1s">
-            <div class="container">
-                <div class="section-header text-center">
-                    <p>About</p>
-                    <h2>Passionate <span> Motivated</span> Sociable</h2>
-                </div>
-                <div class="container banner-text">
-                    <p>
-                        My best quality is that I’m a fast learner. Even if I don’t have that much experience with a certain task, with a bit of guidance I’m able to accomplish it quickly. I understand the importance of goal-setting and I always push myself to reach my objectives in a timely manner.
-                    </p>
-                    <a class="btn">''IF YOU CAN DREAM IT, YOU CAN DO IT!'' SO, I'M A DREAMER.</a>
-                    <p>
-                        This is Shrabanti Saha Rimi, a Software Engineer. 
-                        </p>
-                        <p>
-                        Currently studying M.Sc. in High Integrity Systems at Frankfurt University of Applied Sciences, Germany.
-                        </p>
-                    </p>
-                </div>
-            </div>
-        </div>
-        <!-- Banner End -->
-        </div>
-        <!-- Hero End -->
+    .hero-text p {
+      font-size: 17px;
+      margin-bottom: 25px;
+    }
 
+    .hero-img img {
+      width: 230px;
+      height: 230px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 5px solid white;
+    }
 
-        <!-- About Start -->
-        <div class="about wow fadeInUp" data-wow-delay="0.1s" id="about">
-            <div class="container-fluid">
-                <div class="row align-items-center">
-                    <div class="col-lg-6">
-                        <div class="about-img">
-                            <img src="img/about.jpg" alt="Image">
-                        </div>
-                        
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="about-content">
-                            <div class="section-header text-left">
-                                <p>WORK & EXPERIENCE </p>
-                                <h2> Professional Experience</h2>
-                            </div>
-                            <div class="about-text">
-                                <p>
-                                    Kovair Software Bangladesh Ltd.
-                                    </p>
-                                <p>
-                                    Position: Software Developer
-                                </p>
-                                <p>
-                                    Software Quality Assurance & Test Engineer
-                                    </p>
-                                    <p>
-                                        Duration: June 2019-June 2020
-                                        </p>
-                                        <p>
-                                            Responsibilities:
-                                            </p>
-                                            <p>
-                                                • Test Planning
-                                                • Test Case Writing 
-                                                • Test Case Execution 
-                                                • Prepare Technical Documentation
-                                                
-                                                </p>
-                            </div>
-                            <div class="skills">
-                                <div class="skill-name">
-                                    <p>Test Planning</p><p>85%</p>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                                <div class="skill-name">
-                                    <p>Test Case Writing</p><p>95%</p>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                                <div class="skill-name">
-                                    <p>Test Case Execution</p><p>90%</p>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                                <div class="skill-name">
-                                    <p>Prepare Technical Documentation</p><p>85%</p>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                            <div>
-                                <p>
-                                    Area-Requirement Development to Design and Estimation:
-                                    </p>
-                                    <p>
-                                        • Definition of the scope of work
-                                        • BRS
-                                        •System Design
-                                        •Stakeholder determination
-                                        • Elicitation method determination
-                                        • User Need
-                                        • Reviewing the user Need
-                                        • User Requirement Specification
-                                        • Reviewing the user Requirement
-                                        •Feasibility study
-                                        • Derived Requirements
-                                        • UI Design to Prototypes
-                                        • Function Point of each UI
-                                        • Data structure and Traceability view
-                                        • Function and sub-function
-                                        
-                                        </p>
-                                        <div class="skills">
-                                            <div class="skill-name">
-                                                <p>Definition of the scope of work</p><p>54%</p>
-                                            </div>
-                                            <div class="progress">
-                                                <div class="progress-bar" role="progressbar" aria-valuenow="54" aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
-                                            <div class="skill-name">
-                                                <p>BRS</p><p>60%</p>
-                                            </div>
-                                            <div class="progress">
-                                                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
-                                            <div class="skill-name">
-                                                <p>System Design</p><p>84%</p>
-                                            </div>
-                                            <div class="progress">
-                                                <div class="progress-bar" role="progressbar" aria-valuenow="84" aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
-                                            <div class="skill-name">
-                                                <p>Stakeholder determination</p><p>80%</p>
-                                            </div>
-                                            <div class="progress">
-                                                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
-                                            <div class="skill-name">
-                                                <p>Elicitation method determination</p><p>80%</p>
-                                            </div>
-                                            <div class="progress">
-                                                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
-                                            <div class="skill-name">
-                                                <p>User Need</p><p>80%</p>
-                                            </div>
-                                            <div class="progress">
-                                                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
-                                            <div class="skill-name">
-                                                <p> Reviewing the user Need</p><p>80%</p>
-                                            </div>
-                                            <div class="progress">
-                                                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
-                                            <div class="skill-name">
-                                                <p> User Requirement Specification</p><p>80%</p>
-                                            </div>
-                                            <div class="progress">
-                                                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
-                                            <div class="skill-name">
-                                                <p> Reviewing the user Requirement</p><p>85%</p>
-                                            </div>
-                                            <div class="progress">
-                                                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
-                                            <div class="skill-name">
-                                                <p>Feasibility study</p><p>80%</p>
-                                            </div>
-                                            <div class="progress">
-                                                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
-                                            <div class="skill-name">
-                                                <p>Feasibility study</p><p>78%</p>
-                                            </div>
-                                            <div class="progress">
-                                                <div class="progress-bar" role="progressbar" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
-                                            <div class="skill-name">
-                                                <p>Derived Requirements</p><p>82%</p>
-                                            </div>
-                                            <div class="progress">
-                                                <div class="progress-bar" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
-                                            <div class="skill-name">
-                                                <p>UI Design to Prototypes</p><p>81%</p>
-                                            </div>
-                                            <div class="progress">
-                                                <div class="progress-bar" role="progressbar" aria-valuenow="81" aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
-                                            <div class="skill-name">
-                                                <p> Function Point of each UI</p><p>79%</p>
-                                            </div>
-                                            <div class="progress">
-                                                <div class="progress-bar" role="progressbar" aria-valuenow="79" aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
-                                            <div class="skill-name">
-                                                <p>Data structure and Traceability view</p><p>82%</p>
-                                            </div>
-                                            <div class="progress">
-                                                <div class="progress-bar" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
-                                            <div class="skill-name">
-                                                <p>Function and sub-function</p><p>85%</p>
-                                            </div>
-                                            <div class="progress">
-                                                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
-                                            
-                                        </div>
-                            </div>
-                            <div>
-                                <p>
-                                    Area- Implementing in Project:
-                                    </p>
-                                    <p>
-                                        •Enterprise structure in Genfacto and its purpose and implementation
-                                        •Genfacto Configuration Architectural Overview- implementation
-                                        •Different Components of the platform, their purpose, and customization- implementation
-                                        </p>
-                                        <div class="skills">
-                                            <div class="skill-name">
-                                                <p>Enterprise structure in Genfacto and its purpose and implementation</p><p>82%</p>
-                                            </div>
-                                            <div class="progress">
-                                                <div class="progress-bar" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
-                                            <div class="skill-name">
-                                                <p>Genfacto Configuration Architectural Overview- implementation</p><p>79%</p>
-                                            </div>
-                                            <div class="progress">
-                                                <div class="progress-bar" role="progressbar" aria-valuenow="79" aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
-                                            <div class="skill-name">
-                                                <p>Different Components of the platform, their purpose, and customization- implementation</p><p>84%</p>
-                                            </div>
-                                            <div class="progress">
-                                                <div class="progress-bar" role="progressbar" aria-valuenow="84" aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
-                                            </div>
-                                            </div>
-                                            </div>
+    .btn {
+      display: inline-block;
+      background: white;
+      color: var(--blue);
+      padding: 11px 18px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-right: 10px;
+      margin-top: 8px;
+    }
 
-                            <div class="section-header text-left">
-            
-                                <h2>Executive Member</h2>
-                            <div class="about-text">
-                                <p>
-                                    Software Engineering club (DIUSEC)
-                                    </p>
-                                <p>
-                                    Daffodil International University
-                                </p>
-                                
-                                    <p>
-                                        Duration: January 2018-June 2020
-                                        </p>
-                                       <div> <p>
-                                            Responsibilities:
-                                            </p>
-                                            </div>
-                                            
-                                                
-                                                    <div> • Prepare and design events with schedule and Promotional activities.</div>
+    nav {
+      background: white;
+      padding: 14px 10%;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
 
-                                                
-                                                
-                                                    <div> • Prepare team-wise magazine publication.</div>
-                                                    
-                                                
-                                                    <div>  • Supervise, co-ordination, and faithfully conduction the club. </div>
-                                                
-                                                
-                                                        <div> • Communicate with corresponding DIU authority and make contacts with all outside Professionals for potential
-                                                    meetings, seminars workshops.</div>
-                                                
-                                            
-                                                    <div>  • Coordinate the work of other executives and regular meetings.</div>
-                                                    
-                                                    
-                                               
-                                               
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="section-header text-left">
-            
-            <h2>Academic Research & Thesis</h2>
-            <div class="about-text">
-               <div>
-                <p>
-                    Field: Software Quality Assurance & Testing
-                    </p>
-                    </div>
-              <div> 
-                    <p>
-                    Duration: October 2019 - March 2020
-                </p>
-                </div>
-                <div>
-                
-                        <p>
-                            Title:
-                            </p>
-                            </div>
-                            <div>
-                            
-                                “Combinatorial Test Techniques: Artificial Bee Colony Algorithm for Test Suite 
-                            Generation”
-                                
-                                
-                                </div>
-            </div>
-            
+    nav a {
+      color: var(--dark);
+      text-decoration: none;
+      margin-right: 22px;
+      font-weight: bold;
+    }
 
-        </div>
-      
-        <!-- About End -->
-        
-        
-        <!-- Service Start -->
-        <div class="service" id="service">
-            <div class="container">
-                <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-                    <p>KEY SKILLS</p>
-                    <h2>What I do</h2>
-                </div>
-                <div class="row">
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.0s">
-                        <div class="service-item">
-                            <div class="service-icon">
-                                <i class="fa fa-laptop"></i>
-                            </div>
-                            <div class="service-text">
-                                <h3>Manual Testing</h3>
-                                <p>
-                                    • Requirement Analysis
-                                    • Test planning, Design & Implementation
-                                    • Sanity Testing
-                                    • Smoke Testing
-                                    • Regression Testing
-                                    • User Acceptance Testing
-                                    • System Testing
-                                    • Usability Testing
-                                    • Test Report
-                                    • Technical Documentation.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="service-item">
-                            <div class="service-icon">
-                                <i class="fa fa-laptop-code"></i>
-                            </div>
-                            <div class="service-text">
-                                <h3>Automation Testing Tool
-                                </h3>
-                                <p>
-                                    ✓ Selenium
+    section {
+      padding: 50px 10%;
+    }
 
-                                </p>
-                            </div>
-                        </div>
-                        </div>
-                    </div>   
-                        <div class="row">
-                        <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.2s">
-                            <div class="service-item">
-                                <div class="service-icon">
-                                    <i class="fa fa-laptop"></i>
-                                </div>
-                        <div class="service-text">
-                        <div class="service-text">
-                            <h3>Project Management Tools
-                            </h3>
-                            <p>
-                                ✓ Trello, Jira
+    h2.section-title {
+      color: var(--blue);
+      font-size: 28px;
+      margin-bottom: 25px;
+      border-bottom: 3px solid var(--blue);
+      display: inline-block;
+      padding-bottom: 5px;
+    }
 
-                            </p>
-                        </div>
-                    </div>
-                    </div>
-                    </div>
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.0s">
-                        <div class="service-item">
-                            <div class="service-icon">
-                                <i class="fa fa-laptop"></i>
-                            </div>
-                    <div class="service-text">
-                        <h3>Technical Tools
-                        </h3>
-                        <p>
-                            ✓ Microsoft Office, Microsoft Visio
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      margin-bottom: 22px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
 
-                        </p>
-                    </div>
-                </div>
-                </div>
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.0s">
-                    <div class="service-item">
-                        <div class="service-icon">
-                            <i class="fa fa-laptop"></i>
-                        </div>
-                <div class="service-text">
-                    <h3>Concepts
-                    </h3>
-                    <p>
-                        ✓ SDLC, STLC, OOP, Agile, Scrum
+    .card h3 {
+      color: var(--blue);
+      margin-bottom: 6px;
+    }
 
-                    </p>
-                </div>
-            </div>
-            </div>
-            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.0s">
-                <div class="service-item">
-                    <div class="service-icon">
-                        <i class="fa fa-laptop"></i>
-                    </div>
-            <div class="service-text">
-                <h3>Programming Languages 
-                </h3>
-                <p>
-                    ✓ C, Java, C#, PHP
+    .meta {
+      color: var(--gray);
+      font-size: 14px;
+      margin-bottom: 12px;
+      font-weight: bold;
+    }
 
-                </p>
-            </div>
-        </div>
-        </div>
-        <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.0s">
-            <div class="service-item">
-                <div class="service-icon">
-                    <i class="fa fa-laptop"></i>
-                </div>
-        <div class="service-text">
-            <h3>Version Controller
-            </h3>
-            <p>
-                ✓ Git Hub
+    ul {
+      padding-left: 22px;
+      margin-top: 10px;
+    }
 
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
 
-            </p>
-        </div>
+    .tag {
+      background: #e8f1f8;
+      color: var(--blue);
+      padding: 8px 12px;
+      border-radius: 20px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+      gap: 22px;
+    }
+
+    .project a {
+      color: var(--blue);
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    footer {
+      background: var(--dark);
+      color: white;
+      text-align: center;
+      padding: 25px;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        text-align: center;
+        justify-content: center;
+      }
+
+      .hero-text h1 {
+        font-size: 32px;
+      }
+
+      nav {
+        text-align: center;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 8px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="hero-text">
+      <h1>Shrabanti Saha Rimi</h1>
+      <h2>Automotive Software Test Engineer | ISTQB Certified Tester</h2>
+      <p>
+        Automotive Software Test Engineer specializing in software quality assurance,
+        validation & verification, manual testing, and test automation. Currently
+        working at Robert Bosch GmbH on automotive software validation and
+        Tosca-based automation development.
+      </p>
+      <a href="mailto:Shrabantisaha344@gmail.com" class="btn">Contact Me</a>
+      <a href="Shrabanti_Saha_Rimi_Automotive_CV.pdf" class="btn">Download CV</a>
     </div>
+
+    <div class="hero-img">
+      <img src="img/CV.jpg" alt="Shrabanti Saha Rimi">
     </div>
-    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.0s">
-        <div class="service-item">
-            <div class="service-icon">
-                <i class="fa fa-laptop"></i>
-            </div>
-    <div class="service-text">
-        <h3>IDE
-        </h3>
-        <p>
-            ✓ Eclipse, Code Blocks, Visual Studio Code
+  </header>
 
-        </p>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2 class="section-title">About Me</h2>
+    <div class="card">
+      <p>
+        ISTQB Certified Automotive Software Test Engineer with hands-on experience
+        in automotive software testing, validation & verification, test automation,
+        manual testing, API testing, regression testing, and software quality assurance.
+        I am currently working at Robert Bosch GmbH on GVCI and RDS-related automotive
+        software projects, focusing on validation activities, DCU product testing,
+        calibration testing, and Tosca automation.
+      </p>
+      <br>
+      <p>
+        I have experience in designing automation solutions, building reusable test
+        modules, executing requirements-based test cases, analysing defects, preparing
+        test documentation, and collaborating with Agile Scrum teams. Due to company
+        confidentiality policies, internal Bosch project details are not publicly shared.
+      </p>
     </div>
-</div>
-</div>
-<div class="col-lg-6 wow fadeInUp" data-wow-delay="0.0s">
-    <div class="service-item">
-        <div class="service-icon">
-            <i class="fa fa-laptop"></i>
-        </div>
-<div class="service-text">
-    <h3>Language Proficiency 
-    </h3>
-    <p>
-        ✓ Bangla (Native), English (Reading, Writing, Listening, Speaking)
+  </section>
 
-    </p>
-</div>
-</div>
-</div>
-<div class="col-lg-6 wow fadeInUp" data-wow-delay="0.0s">
-    <div class="service-item">
-        <div class="service-icon">
-            <i class="fa fa-laptop"></i>
-        </div>
-<div class="service-text">
-    <h3>Soft Skill
-    </h3>
-    <p>
-        ✓ Team working, Organizing, Communication
+  <section id="experience">
+    <h2 class="section-title">Professional Experience</h2>
 
+    <div class="card">
+      <h3>Robert Bosch GmbH</h3>
+      <div class="meta">Automotive Test Automation Engineer | Plochingen, Germany | Jan 2025 – Present</div>
+      <ul>
+        <li>Working on automotive software testing activities for GVCI and RDS-related projects.</li>
+        <li>Performing manual and automated testing for automotive software validation and verification.</li>
+        <li>Designing and developing Tosca automation solutions from scratch.</li>
+        <li>Creating reusable automation modules, automated test cases, and scalable test suites.</li>
+        <li>Executing requirements-based, functional, regression, integration, and system testing.</li>
+        <li>Supporting validation and verification of Bosch DCU products including DCU 150 and DCU 220.</li>
+        <li>Conducting calibration testing and software quality assurance activities.</li>
+        <li>Investigating defects, analysing test results, and preparing test documentation.</li>
+      </ul>
+    </div>
 
-    </p>
-</div>
-</div>
-                    </div>
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.4s">
-                        <div class="service-item">
-                            <div class="service-icon">
-                                <i class="fab fa-android"></i>
-                            </div>
-                            <div class="service-text">
-                                <h3>API Testing Tool
-                                </h3>
-                                <p>
-                                    ✓ Postman
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.6s">
-                        <div class="service-item">
-                            <div class="service-icon">
-                                <i class="fab fa-apple"></i>
-                            </div>
-                            <div class="service-text">
-                                <h3>Performance Testing Tool</h3>
-                                <p>
-                                    ✓ JMeter
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Service End -->
-        
-        
-         <!-- Experience Start -->
-        <div class="experience" id="experience">
-            <div class="container">
-                <header class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-                    <p>PROJECTS</p>
-                    <h2>Manual Testing Projects</h2>
-                </header>
-                <div class="timeline">
-                    <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
-                        <div class="timeline-text">
-                            <div class="timeline-date">2019 - 2020</div>
-                            <h2>Amazon ShopingChart System</h2>
-                            
-                            
-                        </div>
-                    </div>
-                    <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
-                        <div class="timeline-text">
-                            <div class="timeline-date">2019 - 2020</div>
-                            <h2>HRM System</h2>
-                            
-                        </div>
-                    </div>
-                    
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="experience" id="experience">
-            <div class="container">
-                <header class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-                    <p>PROJECTS</p>
-                    <h2>Academic Projects</h2>
-                </header>
-                <div class="timeline">
-                    <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
-                        <div class="timeline-text">
-                            <div class="timeline-date">Fall-2016</div>
-                            <h2>• Education Management System
-                            </h2>
-                            
-                            
-                        </div>
-                    </div>
-                    <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
-                        <div class="timeline-text">
-                            <div class="timeline-date">Spring-2017</div>
-                            <h2>• Food Ordering System</h2>
-                            
-                        </div>
-                    </div>
-                    
-                        </div>
-                        <div class="timeline">
-                            <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
-                                <div class="timeline-text">
-                                    <div class="timeline-date">Summer-2018</div>
-                                    <h2>• Student Moderating System
-                                        
-                                    </h2>
-                                    
-                                    
-                                </div>
-                            </div>
-                            <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
-                                <div class="timeline-text">
-                                    <div class="timeline-date">Spring-2019</div>
-                                    <h2>• Airport Management System
-                                    </h2>
-                                    
-                                </div>
-                            </div>
-                            <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
-                                <div class="timeline-text">
-                                    <div class="timeline-date">Summer-2020</div>
-                                    <h2>• Interactive Web Portal System
-                                    </h2>
-                                    
-                                </div>
-                            </div>
-                            
-                                </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="experience" id="experience">
-            
-                </div>
-                
-        <!-- Job Experience End -->
-        
-        
-        <!-- Banner Start -->
-        
-        <!-- Banner End -->
+    <div class="card">
+      <h3>Mixed Reality Lab, Frankfurt University of Applied Sciences</h3>
+      <div class="meta">Junior AR Developer | Frankfurt, Germany | Aug 2023 – Dec 2024</div>
+      <ul>
+        <li>Developed augmented reality applications using Unity, C#, and Microsoft HoloLens 2.</li>
+        <li>Supported software design, implementation, testing, and documentation activities.</li>
+      </ul>
+    </div>
 
+    <div class="card">
+      <h3>EPERI GmbH</h3>
+      <div class="meta">Junior Software QA Engineer | Darmstadt, Germany | Apr 2023 – Mar 2024</div>
+      <ul>
+        <li>Performed manual testing, API testing, automation testing, and regression testing.</li>
+        <li>Developed and executed automated test cases using Tricentis Tosca.</li>
+        <li>Created test documentation and supported defect management activities.</li>
+      </ul>
+    </div>
 
-        <!-- Portfolio Start -->
-        <div class="portfolio" id="portfolio">
-            <div class="container">
-                <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-                    <p>My Portfolio</p>
-                    <h2>My Excellent Portfolio</h2>
-                    
+    <div class="card">
+      <h3>SIXSENTIX Deutschland GmbH</h3>
+      <div class="meta">Junior Software QA Engineer | Frankfurt, Germany | Apr 2022 – Mar 2023</div>
+      <ul>
+        <li>Executed manual and automated testing activities for enterprise software applications.</li>
+        <li>Created and maintained Tosca automation test cases.</li>
+        <li>Supported test planning, test execution, defect reporting, and release validation.</li>
+      </ul>
+    </div>
+  </section>
 
+  <section id="skills">
+    <h2 class="section-title">Skills</h2>
 
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <ul id="portfolio-filter">
-                            <li data-filter="*" class="filter-active">All</li>
-                            <li data-filter=".filter-1">Goal</li>
-                            <li data-filter=".filter-2">Interest</li>
-                            <li data-filter=".filter-3">Other Skills</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="row portfolio-container">
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.0s">
-                        <div class="portfolio-wrap">
-                            <div class="portfolio-img">
-                                <img src="img/portfolio-11.jpg" alt="Image">
-                            </div>
-                            <div class="portfolio-text">
-                                <h3>Career Paths</h3>
-                               
-                                <a class="btn" href="img/portfolio-11.jpg" data-lightbox="portfolio">+</a>
-                               
-                            </div>
-                            <div>
-                                <p>I want to work on Big Data, IOT, Data Mining which are going to be much popular in near future. Before that I want to learn all the programming and development concepts of some popular frameworks & improve my problem solving Skills</p> 
+    <div class="card">
+      <h3>Core Testing Skills</h3>
+      <div class="skills">
+        <span class="tag">Automotive Software Testing</span>
+        <span class="tag">Validation & Verification</span>
+        <span class="tag">Requirements-Based Testing</span>
+        <span class="tag">Functional Testing</span>
+        <span class="tag">Regression Testing</span>
+        <span class="tag">System Testing</span>
+        <span class="tag">Integration Testing</span>
+        <span class="tag">Manual Testing</span>
+        <span class="tag">Test Automation</span>
+        <span class="tag">API Testing</span>
+        <span class="tag">Defect Management</span>
+        <span class="tag">Test Documentation</span>
+      </div>
+    </div>
 
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2 wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="portfolio-wrap">
-                            <div class="portfolio-img">
-                                <img src="img/portfolio-2.jpg" alt="Image">
-                            </div>
-                            <div class="portfolio-text">
-                                <h3>Travelling</h3>
-                                <a class="btn" href="img/portfolio-2.jpg" data-lightbox="portfolio">+</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="0.4s">
-                        <div class="portfolio-wrap">
-                            <div class="portfolio-img">
-                                <img src="img/portfolio-31.jpg" alt="Image">
-                            </div>
-                            <div class="portfolio-text">
-                                <h3>Leadership</h3>
-                                <a class="btn" href="img/portfolio-31.jpg" data-lightbox="portfolio">+</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.6s">
-                        <div class="portfolio-wrap">
-                            <div class="portfolio-img">
-                                <img src="img/portfolio-41.jpg" alt="Image">
-                            </div>
-                            <div class="portfolio-text">
-                                <h3>Dream jobs</h3>
-                                <a class="btn" href="img/portfolio-41.jpg" data-lightbox="portfolio">+</a>
-                            </div>
-                            <div>
-                                <p>While the stack someone learn doesn’t matter a whole lot, what does matter is learning by doing. This means dedicating some real time to perfecting someone's new craft. I want to work as a software developer at an established tech company like Tech-Giant Google, Tiger-IT, Telenor, Datasoft etc.</p> 
+    <div class="card">
+      <h3>Tools & Technologies</h3>
+      <div class="skills">
+        <span class="tag">Tricentis Tosca</span>
+        <span class="tag">Selenium</span>
+        <span class="tag">Postman</span>
+        <span class="tag">JMeter</span>
+        <span class="tag">Jira</span>
+        <span class="tag">ALM</span>
+        <span class="tag">Trello</span>
+        <span class="tag">Unity</span>
+        <span class="tag">Microsoft HoloLens 2</span>
+      </div>
+    </div>
 
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2 wow fadeInUp" data-wow-delay="0.8s">
-                        <div class="portfolio-wrap">
-                            <div class="portfolio-img">
-                                <img src="img/portfolio-5.jpg" alt="Image">
-                            </div>
-                            <div class="portfolio-text">
-                                <h3>Music</h3>
-                                <a class="btn" href="img/portfolio-5.jpg" data-lightbox="portfolio">+</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2 wow fadeInUp" data-wow-delay="0.8s">
-                        <div class="portfolio-wrap">
-                            <div class="portfolio-img">
-                                <img src="img/portfolio-52.jpg" alt="Image">
-                            </div>
-                            <div class="portfolio-text">
-                                <h3>Writing Poetry</h3>
-                                <a class="btn" href="img/portfolio-52.jpg" data-lightbox="portfolio">+</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2 wow fadeInUp" data-wow-delay="0.8s">
-                        <div class="portfolio-wrap">
-                            <div class="portfolio-img">
-                                <img src="img/portfolio-53.jpg" alt="Image">
-                            </div>
-                            <div class="portfolio-text">
-                                <h3>Watching Documentries</h3>
-                                <a class="btn" href="img/portfolio-53.jpg" data-lightbox="portfolio">+</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2 wow fadeInUp" data-wow-delay="0.8s">
-                        <div class="portfolio-wrap">
-                            <div class="portfolio-img">
-                                <img src="img/portfolio-54.jpg" alt="Image">
-                            </div>
-                            <div class="portfolio-text">
-                                <h3>Food</h3>
-                                <a class="btn" href="img/portfolio-54.jpg" data-lightbox="portfolio">+</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2 wow fadeInUp" data-wow-delay="0.8s">
-                        <div class="portfolio-wrap">
-                            <div class="portfolio-img">
-                                <img src="img/portfolio-55.jpg" alt="Image">
-                            </div>
-                            <div class="portfolio-text">
-                                <h3>Fashion</h3>
-                                <a class="btn" href="img/portfolio-55.jpg" data-lightbox="portfolio">+</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2 wow fadeInUp" data-wow-delay="0.8s">
-                        <div class="portfolio-wrap">
-                            <div class="portfolio-img">
-                                <img src="img/portfolio-56.jpg" alt="Image">
-                            </div>
-                            <div class="portfolio-text">
-                                <h3>Volunteering</h3>
-                                <a class="btn" href="img/portfolio-56.jpg" data-lightbox="portfolio">+</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2 wow fadeInUp" data-wow-delay="0.8s">
-                        <div class="portfolio-wrap">
-                            <div class="portfolio-img">
-                                <img src="img/portfolio-57.jpg" alt="Image">
-                            </div>
-                            <div class="portfolio-text">
-                                <h3>Reading Blogs</h3>
-                                <a class="btn" href="img/portfolio-57.jpg" data-lightbox="portfolio">+</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="1s">
-                        <div class="portfolio-wrap">
-                            <div class="portfolio-img">
-                                <img src="img/portfolio-61.jpg" alt="Image">
-                            </div>
-                            <div class="portfolio-text">
-                                <h3>Organizer</h3>
-                                <a class="btn" href="img/portfolio-61.jpg" data-lightbox="portfolio">+</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="1s">
-                        <div class="portfolio-wrap">
-                            <div class="portfolio-img">
-                                <img src="img/portfolio-62.jpg" alt="Image">
-                            </div>
-                            <div class="portfolio-text">
-                                <h3>Presentation</h3>
-                                <a class="btn" href="img/portfolio-62.jpg" data-lightbox="portfolio">+</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="1s">
-                        <div class="portfolio-wrap">
-                            <div class="portfolio-img">
-                                <img src="img/portfolio-63.jpg" alt="Image">
-                            </div>
-                            <div class="portfolio-text">
-                                <h3>Hosting</h3>
-                                <a class="btn" href="img/portfolio-63.jpg" data-lightbox="portfolio">+</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="1s">
-                        <div class="portfolio-wrap">
-                            <div class="portfolio-img">
-                                <img src="img/portfolio-64.jpg" alt="Image">
-                            </div>
-                            <div class="portfolio-text">
-                                <h3>Communication</h3>
-                                <a class="btn" href="img/portfolio-64.jpg" data-lightbox="portfolio">+</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio End -->
-        
-        
-        <!-- Banner Start -->
-        
-        <!-- Banner End -->
-        
-        
-        <!-- Price Start -->
-        <div class="price" id="price">
-            <div class="container">
-                <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-                    <p>SWOT</p>
-                    <h2>STRENGTH, WEAKNESS, OPPORTUNITIES, THREATS</h2>
-                </div>
-                <div class="row">
-                    <div class="col-md-4 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="price-item">
-                            <div class="price-header">
-                                <div class="price-title">
-                                    <h1>STRENGTH</h1>
-                                </div>
-                                <div class="price-prices">
-                                    
-                                </div>
-                            </div>
-                            <div class="price-body">
-                                <div class="price-description">
-                                    <h2>Soft-Skills</h2>
-                                    <p>I have an experience of working with a team as well as leading the group of some software developers to acheive some goals. So, I have a strong teamwork skill as well as communication skill.</p>
-                                    <h2>Technical-Skills</h2>
-                                    <p>I can develop Web applications using HTML, CSS, MaterializeCSS, Javascript, jQuery, Ajax, JSP & Java Servlets. To see my technical workflows & Knowledge</p>
-                                    <h2>Analytical-Skills</h2>
-                                    <p>I have a strong mathematical problem solving skills which I can apply during data analysis algorithm building, calculating time & space complexity or, optimizing the performance of a program.</p>
-                                </div>
-                            </div>
-                          
-                        </div>
-                    </div>
-                    <div class="col-md-4 wow fadeInUp" data-wow-delay="0.0s">
-                        <div class="price-item featured-item">
-                            <div class="price-header">
-                                <div class="price-title">
-                                    <h1>WEAKNESS</h1>
-                                </div>
-                                <div class="price-prices">
-                                  
-                                </div>
-                            </div>
-                            <div class="price-body">
-                                <div class="price-description">
-                                    <h2>Personality Traits</h2>
-                                    <p>I have a perfectionism problem while working. Though the work I have done at some point is excellent to others but as long as I cannot satisfy myself, I continue working till it seems perfect.</p>
-                                    <h2>Learning Speed</h2>
-                                    <p>I take more time than people usually need while learning something new because I take time to learn something deeply and exercising on it through real life applications as well.</p>
-                                    <h2>Changing Behaviour</h2>
-                                    <p>Whenever something is going wrong in my work, I can't focus on other things. As long as the problem is not solved, I rarely talk or, communicate with people regarding other things.</p>
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div>
-                    </div>
-                    <div class="row">
-                    <div class="col-md-4 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="price-item">
-                            <div class="price-header">
-                                <div class="price-title">
-                                    <h1>OPPORTUNITIES</h1>
-                                </div>
-                                <div class="price-prices">
-                                    
-                                </div>
-                            </div>
-                            <div class="price-body">
-                                <div class="price-description">
-                                    <h2>Academic Results</h2>
-                                    <p>I have a good C.G.P.A. So, I have some good opportunities to get scholarship programs in foreign Universities, participation in research works or, a good career prospect.</p>
-                                    <h2>Passion</h2>
-                                    <p>Best outcome or, Efficient output can only be expected when someone is enjoying his/her working field. I love to code & even don't get bore so early just because I have a strong passion on it.</p>
-                                    <h2>Reliability</h2>
-                                    <p>Working on something doesn't mean to do the job theoritically. It's all about how much careful & responsible someone is. I can focus on my work & try to complete it being properly responsible.</p>
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div>
-                    <div class="col-md-4 wow fadeInUp" data-wow-delay="0.0s">
-                        <div class="price-item featured-item">
-                            <div class="price-header">
-                                <div class="price-title">
-                                    <h1>THREATS</h1>
-                                </div>
-                                <div class="price-prices">
-                                  
-                                </div>
-                            </div>
-                            <div class="price-body">
-                                <div class="price-description">
-                                    <h2>Inability to take criticism</h2>
-                                    <p>Though I know that criticism on someone's work is good for their improvement but I can't take criticism so easily over what I do. I am trying my best to come out of this problem.</p>
-                                    <h2>External Opportunities</h2>
-                                    <p>I am mainly a J2EE developer & Deploying a J2EE application for letting people to have a live experience my developed applications is so costly. This leads me to an economical thread.</p>
-                                    <h2>Overthinking</h2>
-                                    <p>I think deeply on something for what I am supposed to do. The main criteria is I try to solve problems as early as possible in both practical & personal life which makes me stressed sometimes.</p>
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div>
-                </div>
-                </div>
-            </div>
-        </div>
-        <!-- Price End -->
-        
-        
-        <!-- Testimonial Start -->
-        <div class="testimonial wow fadeInUp" data-wow-delay="0.1s" id="review">
-            <div class="container">
-                <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-                    <p>Education</p>
-                    <h2>Current - 2011</h2>
-                    
+    <div class="card">
+      <h3>Programming & Concepts</h3>
+      <div class="skills">
+        <span class="tag">Java</span>
+        <span class="tag">Python</span>
+        <span class="tag">C</span>
+        <span class="tag">C#</span>
+        <span class="tag">PHP</span>
+        <span class="tag">SDLC</span>
+        <span class="tag">STLC</span>
+        <span class="tag">Agile Scrum</span>
+        <span class="tag">OOP</span>
+      </div>
+    </div>
+  </section>
 
+  <section id="projects">
+    <h2 class="section-title">Selected Projects</h2>
 
-                </div>
-                <div class="testimonial-icon">
-                    <i class="fa fa-quote-left"></i>
-                    
-                </div>
-                <div class="owl-carousel testimonials-carousel">
-                    <div class="testimonial-item">
-                        <div class="testimonial-img">
-                            <img src="img/testimonial-11.jpg" alt="Image">
-                        </div>
-                        <div class="testimonial-text">
-                            <p>
-                                2021 - Current
-                            </p>
-                            <h3>Frankfurt University of Applied Sciences</h3>
-                            <h4>M.Sc in High Integrity Systems</h4>
-                        </div>
-                    </div>
-                    <div class="testimonial-item">
-                        <div class="testimonial-img">
-                            <img src="img/testimonial-21.jpg" alt="Image">
-                        </div>
-                        <div class="testimonial-text">
-                            <p>
-                                2016 - 2020
-                            </p>
-                            <h3>Daffodil International University</h3>
-                            <h4>B. Sc in Software Engineering</h4>
-                        </div>
-                    </div>
-                    <div class="testimonial-item">
-                        <div class="testimonial-img">
-                            <img src="img/testimonial-31.jpg" alt="Image">
-                        </div>
-                        <div class="testimonial-text">
-                            <p>
-                                2013 - 2015
-                            </p>
-                            <h3>Birshreshtha Munshi Abdur Rouf Public College</h3>
-                            <h4>Higher Secondary Certificate (HSC)</h4>
-                            <p>Science</p>
-                        </div>
-                    </div>
-                    <div class="testimonial-item">
-                        <div class="testimonial-img">
-                            <img src="img/testimonial-31.jpg" alt="Image">
-                        </div>
-                        <div class="testimonial-text">
-                            <p>
-                                2011 - 2013
-                            </p>
-                            <h3>Birshreshtha Munshi Abdur Rouf Public College</h3>
-                            <h4>Secondary School Certificate (SSC)</h4>
-                            <p>Science</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Testimonial End -->
+    <div class="grid">
+      <div class="card project">
+        <h3>Amazon Shopping Cart System</h3>
+        <p>Comprehensive software testing and bug reporting for an open-source shopping cart system.</p>
+        <a href="https://cutt.ly/4YXO9Yj" target="_blank">View Project</a>
+      </div>
 
+      <div class="card project">
+        <h3>HRM System</h3>
+        <p>Created test documentation, test cases, execution plans, and QA reports for an HRM system.</p>
+        <a href="https://cutt.ly/uYXO754" target="_blank">View Project</a>
+      </div>
 
-        <!-- Team Start -->
-        <div class="team" id="team">
-            <div class="container">
-                <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-                    <p>Acheivement</p>
-                    <h2>VOLUNTEERING & EXTRACURRICUlARACTIVITIS</h2>
-                </div>
-                <div class="row">
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.0s">
-                        <div class="team-item">
-                            <div class="team-img">
-                                <img src="img/team-11.jpg" alt="Image">
-                            </div>
-                            <div class="team-text">
-                                <h2>women programming contest- Fall 2016.</h2>
-                                <h4>Daffodil International University</h4>
-                                <p>
-                                    Year: 2016
-                                </p>
-                               
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="team-item">
-                            <div class="team-img">
-                                <img src="img/team-21.jpg" alt="Image">
-                            </div>
-                            <div class="team-text">
-                                <h2>ISTQB Foundation Level Certification.</h2>
-                                <h4>SAJO ACADEMY</h4>
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.4s">
-                        <div class="team-item">
-                            <div class="team-img">
-                                <img src="img/team-31.jpg" alt="Image">
-                            </div>
-                            <div class="team-text">
-                                <h2>ISTQB Foundation Level (CTFL) Exam Review</h2>
-                                <h4>Maged Koshty</h4>
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.6s">
-                        <div class="team-item">
-                            <div class="team-img">
-                                <img src="img/team-41.jpg" alt="Image">
-                            </div>
-                            <div class="team-text">
-                                <h2>Symposium on Software QA & Testing</h2>
-                                <h4> SQAT Bangladesh</h4>
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.0s">
-                        <div class="team-item">
-                            <div class="team-img">
-                                <img src="img/team-12.jpg" alt="Image">
-                            </div>
-                            <div class="team-text">
-                                <h2> ISTQB Foundation Level Training</h2>
-                                <h4>Tarek Roshdy</h4>
-                              
-                               
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.0s">
-                        <div class="team-item">
-                            <div class="team-img">
-                                <img src="img/team-13.jpg" alt="Image">
-                            </div>
-                            <div class="team-text">
-                                <h2>WordPress for Beginners</h2>
-                                <h4>Bohubrihi</h4>
-                                
-                               
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.0s">
-                        <div class="team-item">
-                            <div class="team-img">
-                                <img src="img/team-14.jpg" alt="Image">
-                            </div>
-                            <div class="team-text">
-                                <h2>HTML5, CSS3 & Bootstrap 4 For Web Development</h2>
-                                <h4>Bohubrihi</h4>
-                                
-                               
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Team End -->
-        
-        
-        <!-- Contact Start -->
-        
-        <!-- Contact End -->
+      <div class="card project">
+        <h3>Time-Series Analysis on ECG Data</h3>
+        <p>Performed ECG signal analysis using machine learning for classification and prediction.</p>
+        <a href="https://cutt.ly/bea1hDUC" target="_blank">View Project</a>
+      </div>
 
+      <div class="card project">
+        <h3>Containerisation & Hybrid Cloud Deployment</h3>
+        <p>Worked with Docker and Kubernetes for containerisation and hybrid cloud deployment.</p>
+        <a href="https://cutt.ly/Aea1xVt6" target="_blank">View Project</a>
+      </div>
 
-        <!-- Blog Start -->
-        
-        <!-- Blog End -->
+      <div class="card project">
+        <h3>Real-Time Mask Detection</h3>
+        <p>Developed a deep learning-based computer vision system for real-time mask detection.</p>
+        <a href="https://cutt.ly/0ea1m4dQ" target="_blank">View Project</a>
+      </div>
+    </div>
+  </section>
 
+  <section id="education">
+    <h2 class="section-title">Education & Certifications</h2>
 
-        <!-- Footer Start -->
-      
-        <div class="footer wow fadeIn" data-wow-delay="0.3s">
-            <div class="container-fluid">
-                <div class="container">
-                    <div class="footer-info">
-                        <h2>Shrabanti Saha Rimi</h2>
-                        <h3>Frankfurt am Main, Germany</h3>
-                        <div class="footer-menu">
-                            <p>+4917669407117</p>
-                           <p>Shrabantisaha344@gmail.com</p>
-                            <p>shrabanti35-1649@diu.edu.bd</p>
-                            <p>shrabanti.rimi@stud.fra-uas.de</p>
-                        </div>
-                        <div class="footer-social">
-                            
-                            <a href="https://www.facebook.com/shoronika.rimi/"><i class="fab fa-facebook-f"><p>Shrabanti Rimi</p></i></a>
-                            <a href="https://github.com/ShrabantiRimi"><i class="fab fa-github"><p>ShrabantiRimi</p></i></a>
-                            
-                            <a href="https://www.linkedin.com/in/shrabanti-saha-rimi/"><i class="fab fa-linkedin-in"><p>shrabanti-saha-rimi/</p></i></a>
-                        </div>
-                    </div>
-                </div>
-                </div>
-                
-                <div class="container copyright">
-                    <p>&copy; <a href="#">Shrabanti Saha Rimi</a>, All Right Reserved | Designed By <a href="https://htmlcodex.com">HTML Codex</a></p>
-                </div>
-            </div>
-        </div>
-       
-        <!-- Footer End -->
-        
-        
-        <!-- Back to top button -->
-        <a href="#" class="btn back-to-top"><i class="fa fa-chevron-up"></i></a>
-        
-        
-        <!-- Pre Loader -->
-        <div id="loader" class="show">
-            <div class="loader"></div>
-        </div>
+    <div class="grid">
+      <div class="card">
+        <h3>Master of Science in High Integrity Systems</h3>
+        <p>Frankfurt University of Applied Sciences, Germany</p>
+        <p><strong>2022 – Present</strong></p>
+      </div>
 
-        
-        <!-- JavaScript Libraries -->
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-        <script src="lib/easing/easing.min.js"></script>
-        <script src="lib/wow/wow.min.js"></script>
-        <script src="lib/waypoints/waypoints.min.js"></script>
-        <script src="lib/typed/typed.min.js"></script>
-        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-        <script src="lib/isotope/isotope.pkgd.min.js"></script>
-        <script src="lib/lightbox/js/lightbox.min.js"></script>
-        
-        <!-- Contact Javascript File -->
-        <script src="mail/jqBootstrapValidation.min.js"></script>
-        <script src="mail/contact.js"></script>
+      <div class="card">
+        <h3>Bachelor of Science in Software Engineering</h3>
+        <p>Daffodil International University, Dhaka, Bangladesh</p>
+        <p><strong>2016 – 2020</strong></p>
+      </div>
 
-        <!-- Template Javascript -->
-        <script src="js/main.js"></script>
-    </body>
+      <div class="card">
+        <h3>Certifications</h3>
+        <ul>
+          <li>ISTQB Foundation Level</li>
+          <li>Kovair Software Ltd: SDLC</li>
+          <li>SQAT Bangladesh: Symposium QA</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Bachelor Thesis</h3>
+        <p>Combinatorial Test Techniques: Artificial Bee Colony Algorithm for Test Suite Generation.</p>
+        <a href="https://cutt.ly/VYXIN5X" target="_blank">View Thesis</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2 class="section-title">Contact</h2>
+    <div class="card">
+      <p><strong>Email:</strong> <a href="mailto:Shrabantisaha344@gmail.com">Shrabantisaha344@gmail.com</a></p>
+      <p><strong>Phone:</strong> (+49) 178 506 9706</p>
+      <p><strong>Location:</strong> Esslingen am Neckar, Germany</p>
+      <p><strong>Languages:</strong> English C1 | German A1</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Shrabanti Saha Rimi | Automotive Software Test Engineer</p>
+  </footer>
+
+</body>
 </html>
+```
